@@ -21,7 +21,8 @@ React Native 0.83, Expo 55, TypeScript, Socket.io, Vitest
 - `errs/` directory with untracked error logs (investigate)
 
 ## TestFlight
-- EAS Build configured (eas.json)
+- CLI via xcodebuild (workspace: ios/PBSim.xcworkspace, scheme: PBSim)
+- NOT EAS Build (costs money) — uses same xcodebuild pipeline as SwiftUI projects
 - ASC App ID: 6760085983
 - Bundle ID: com.tanmay.pbs
 

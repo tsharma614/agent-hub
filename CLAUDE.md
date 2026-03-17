@@ -15,7 +15,7 @@ All projects live in `~/repos/`. Read their code directly when you need context.
 
 | Repo | What | Stack | Deploy |
 |------|------|-------|--------|
-| `pkmn-btl-sim` | Pokemon battle simulator, multiplayer | React Native/Expo, TypeScript, Socket.io | EAS Build → TestFlight (build 19) |
+| `pkmn-btl-sim` | Pokemon battle simulator, multiplayer | React Native/Expo, TypeScript, Socket.io | xcodebuild → TestFlight (build 19) |
 | `goDealApp` | Go! Deal! — Monopoly Deal card game | SwiftUI, MultipeerConnectivity, GameKit | xcodebuild → TestFlight (build 21) |
 | `AbsolutelyNot` | No Thanks card game | SwiftUI, MultipeerConnectivity, GameKit | xcodebuild → TestFlight (build 6) |
 | `trusha-job-search` | Daily job digest for Trusha | Python, GitHub Actions, Adzuna/Muse APIs | GitHub Actions cron (runs daily 8am ET) |

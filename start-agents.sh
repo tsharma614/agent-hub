@@ -11,10 +11,10 @@ tmux kill-session -t $SESSION 2>/dev/null
 tmux new-session -d -s $SESSION -n "hub" -c "$HOME/repos/agent-hub"
 
 # Create a window for each project (no Claude running — just the shell, zero RAM)
-tmux new-window -t $SESSION -n "pkmn" -c "$HOME/repos/pkmn-btl-sim"
-tmux new-window -t $SESSION -n "godeal" -c "$HOME/repos/goDealApp"
-tmux new-window -t $SESSION -n "absnot" -c "$HOME/repos/AbsolutelyNot"
-tmux new-window -t $SESSION -n "trusha" -c "$HOME/repos/trusha-job-search"
+tmux new-window -t $SESSION:1 -n "pkmn" -c "$HOME/repos/pkmn-btl-sim"
+tmux new-window -t $SESSION:2 -n "godeal" -c "$HOME/repos/goDealApp"
+tmux new-window -t $SESSION:3 -n "absnot" -c "$HOME/repos/AbsolutelyNot"
+tmux new-window -t $SESSION:4 -n "trusha" -c "$HOME/repos/trusha-job-search"
 
 # Go back to hub window
 tmux select-window -t $SESSION:0

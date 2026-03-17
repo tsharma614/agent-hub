@@ -22,7 +22,7 @@ SwiftUI, MultipeerConnectivity, GameKit, native Swift (no dependencies)
 
 ## TestFlight
 - ExportOptions.plist configured for App Store Connect
-- Manual via xcodebuild
+- CLI via xcodebuild archive + export + altool upload
 - Team ID: U9782HGY2C
 
 ## Next Steps

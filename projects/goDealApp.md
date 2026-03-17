@@ -22,7 +22,7 @@ SwiftUI, MultipeerConnectivity, GameKit/Game Center, native Swift (no dependenci
 - Group G: Customization (category images, crop/resize UI)
 
 ## TestFlight
-- Manual via xcodebuild + ExportOptions.plist
+- CLI via xcodebuild archive + export + altool upload
 - Bundle ID: com.tanmaysharma.godeal
 - Team ID: U9782HGY2C
 
