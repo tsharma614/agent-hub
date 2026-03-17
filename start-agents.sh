@@ -19,8 +19,8 @@ tmux new-window -t $SESSION:4 -n "trusha" -c "$HOME/repos/trusha-job-search"
 # Go back to hub window
 tmux select-window -t $SESSION:0
 
-# Launch Claude in the hub window
-tmux send-keys -t $SESSION:0 "claude" Enter
+# Launch Claude in the hub window (bypass permissions for phone use)
+tmux send-keys -t $SESSION:0 "claude --dangerously-skip-permissions" Enter
 
 echo "Hub session started. Attach with: tmux attach -t $SESSION"
 echo ""
@@ -32,4 +32,4 @@ echo "  3: absnot  (AbsolutelyNot)"
 echo "  4: trusha  (trusha-job-search)"
 echo ""
 echo "Switch windows: Ctrl+B then 0-4"
-echo "Launch Claude in a project: switch to its window, type 'claude'"
+echo "Launch Claude in a project: switch to its window, type 'claude --dangerously-skip-permissions'"
